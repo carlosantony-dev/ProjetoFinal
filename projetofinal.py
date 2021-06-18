@@ -5,7 +5,9 @@ bonus=float(input("Digite o valor do bônus: "))
 meses=int(input("Digite o número de meses trabalhados: "))
 diasferias=int(input("Digite o número de dias de férias: "))
 
-#Calculo INSS
+#Calculo substração do INSS
+
+#COLOCA ESSE E O DO IRFF DENTRO DE UMA FUNÇÃO para ficar mais clean
 if salariobruto <=1045:
     salarioseminss=salariobruto - (0.075*salariobruto)
 
@@ -18,6 +20,8 @@ if salariobruto >=2089.61 and salariobruto <=3134.40:
 if salariobruto >=3134.41:
     salarioseminss=salariobruto - (0.14*salariobruto)
 
+
+#Calculo substração do IRFF
     
 if salarioseminss >=1903.99 and salarioseminss <= 2826.6:
     salarioseminsssemirff=salarioseminss - (0.07*salarioseminss)
