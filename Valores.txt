@@ -1,1 +1,8 @@
-eu odeio gerael
+Nome: Bruno Amorim
+Setor: TI
+
+| Salário mensal |
+Valor total bruto: 2320.0
+Salário sem INSS: 6880.0
+Valor de INSS: 1120.0
+Valor da base de cálculo: 1120.0

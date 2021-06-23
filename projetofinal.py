@@ -1,8 +1,4 @@
-def criarTxT(valores):
-
-    with open('Valores.txt', 'w') as arquivo:
-        for valor in valores:
-            arquivo.write(str(valor))
+#coding utf-8
 
 nome = str(input("Digite o nome do funcionário: "))
 setor = str(input("Digite o setor que ele trabalha: "))
@@ -30,19 +26,42 @@ if salariobruto >= 3134.41:
 # Calculo substração do IRFF
 
 if salarioseminss >= 1903.99 and salarioseminss <= 2826.6:
-    salarioseminsssemirff = salarioseminss - (0.07*salarioseminss)
-    print(salarioseminsssemirff)
+    salarioseminsssemirff = salarioseminss - (0.057*salarioseminss)
+    aliquotairff = 0.075
 
 if salarioseminss >= 2826.66 and salarioseminss <= 3751.05:
     salarioseminsssemirff = salarioseminss - (0.15*salarioseminss)
-    print(salarioseminsssemirff)
+    aliquotairff = 0.15
 
 if salarioseminss >= 3751.06 and salarioseminss <= 4664.68:
-    salarioseminsssemirff = salarioseminss - (0.22*salarioseminss)
-    print(salarioseminsssemirff)
+    salarioseminsssemirff = salarioseminss - (0.225*salarioseminss)
+    aliquotairff = 0.225
 
 if salarioseminss >= 4664.69:
-    salarioseminsssemirff = salarioseminss - (0.22*salarioseminss)
+    salarioseminsssemirff = salarioseminss - (0.275*salarioseminss)
+    aliquotairff = 0.275
+
+valordeinss = salariobruto - salarioseminss
+valordabasedecalculo = salariobruto - valordeinss
+# valoradeduzir = 
+valordeirff= (valordabasedecalculo * aliquotairff) * valoradeduzir
+
+with open('Valores.txt', 'a') as arquivo:
+    arquivo.write('Nome: ' + nome + '\n')
+    arquivo.write('Setor: ' + setor + '\n')
+
+    arquivo.write('\n')
+    arquivo.write('| Salário mensal |' + '\n')
+    arquivo.write('\n')
+
+    arquivo.write('INSS:' + '\n')
+    arquivo.write('Valor total bruto: ' + str(salariobruto + bonus) + '\n')
+    arquivo.write('Salário sem INSS: ' + str(salarioseminss) + '\n')
+    arquivo.write('Valor de INSS: ' + str(valordeinss) + '\n')
+    arquivo.write('Valor da base de cálculo: ' + str(valordabasedecalculo) + '\n')
+
+    arquivo.write('IRFF:' + '\n')
+    # arquivo.write('Valor a deduzir:' + str(valoradeduzir) '\n')
 
 
-criarTxT('Eu amo o bletchinha!')
+    
