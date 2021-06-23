@@ -27,31 +27,31 @@ if salariobruto >= 3134.41:
 
 if salarioseminss >= 1903.99 and salarioseminss <= 2826.6:
     salarioseminsssemirff = salarioseminss - (0.057*salarioseminss)
-    aliquotairff = 0.075
+    aliquotairrf = 0.075
 
 if salarioseminss >= 2826.66 and salarioseminss <= 3751.05:
     salarioseminsssemirff = salarioseminss - (0.15*salarioseminss)
-    aliquotairff = 0.15
+    aliquotairrf = 0.15
 
 if salarioseminss >= 3751.06 and salarioseminss <= 4664.68:
     salarioseminsssemirff = salarioseminss - (0.225*salarioseminss)
-    aliquotairff = 0.225
+    aliquotairrf = 0.225
 
 if salarioseminss >= 4664.69:
     salarioseminsssemirff = salarioseminss - (0.275*salarioseminss)
-    aliquotairff = 0.275
+    aliquotairrf = 0.275
 
 valordeinss = salariobruto - salarioseminss
 valordabasedecalculo = salariobruto - valordeinss
 # valoradeduzir = 
-valordeirff= (valordabasedecalculo * aliquotairff) * valoradeduzir
+valordeirrf= (valordabasedecalculo * aliquotairrf) * valoradeduzir
 
 with open('Valores.txt', 'a') as arquivo:
     arquivo.write('Nome: ' + nome + '\n')
     arquivo.write('Setor: ' + setor + '\n')
 
     arquivo.write('\n')
-    arquivo.write('| Salário mensal |' + '\n')
+    arquivo.write('| SALÁRIO MENSAL |' + '\n')
     arquivo.write('\n')
 
     arquivo.write('INSS:' + '\n')
@@ -60,8 +60,36 @@ with open('Valores.txt', 'a') as arquivo:
     arquivo.write('Valor de INSS: ' + str(valordeinss) + '\n')
     arquivo.write('Valor da base de cálculo: ' + str(valordabasedecalculo) + '\n')
 
+    arquivo.write('\n')
+
     arquivo.write('IRFF:' + '\n')
     # arquivo.write('Valor a deduzir:' + str(valoradeduzir) '\n')
+    arquivo.write('Valor de IRRF: ' + valordeirrf +'\n')
+    arquivo.write('Valor Salário líquido: ' + valordeirrf +'\n')
+
+    arquivo.write('\n')
+
+    arquivo.write('FÉRIAS:' + '\n')
+    arquivo.write('Valor total de férias :' + '\n')
+    arquivo.write('Valor de INSS de férias :' + '\n')
+    arquivo.write('Valor da base da Cálculo de Férias :' + '\n')
+    arquivo.write('Valor a deduzir de Férias :' + '\n')
+    arquivo.write('Valor de IRRF de férias :' + '\n')
+    arquivo.write('Férias líquido :' + '\n')
+    
+    arquivo.write('\n')
+    
+    arquivo.write('13º SALÁRIO' + '\n')
+    arquivo.write('Valor total trabalhado: ' + '\n')
+    arquivo.write('Valor de INSS de 13º Salário: ' + '\n')
+    arquivo.write('Valor da Base da Cálculo de 13º Salário: ' + '\n')
+    arquivo.write('Valor a deduzir de 13º Salário: ' + '\n')
+    arquivo.write('Valor de IRRF de 13º Salário: ' + '\n')
+    arquivo.write('13º Salário líquido: ' + '\n')
+
+
+
+
 
 
     
