@@ -2,7 +2,7 @@
 
 nome = str(input("Digite o nome do funcionário: "))
 setor = str(input("Digite o setor que ele trabalha: "))
-salariobruto = float(input("Digite do salário bruto: "))
+salariobruto = float(input("Digite o salário bruto: "))
 bonus = float(input("Digite o valor do bônus: "))
 meses = int(input("Digite o número de meses trabalhados: "))
 diasferias = int(input("Digite o número de dias de férias: "))
