@@ -7,6 +7,9 @@ bonus = float(input("Digite o valor do bônus: "))
 meses = int(input("Digite o número de meses trabalhados: "))
 diasferias = int(input("Digite o número de dias de férias: "))
 
+
+salariobruto = salariobruto + bonus
+
 # Calculo substração do INSS
 
 # COLOCA ESSE E O DO IRFF DENTRO DE UMA FUNÇÃO para ficar mais clean
