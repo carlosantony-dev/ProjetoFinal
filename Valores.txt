@@ -1,8 +1,30 @@
-Nome: Bruno Amorim
-Setor: TI
+Nome: Bletcha
+Setor: ti
 
-| Salário mensal |
-Valor total bruto: 2320.0
-Salário sem INSS: 6880.0
+| SALÁRIO MENSAL |
+
+INSS:
+Valor total bruto: 10000.0
 Valor de INSS: 1120.0
-Valor da base de cálculo: 1120.0
+Valor da base de cálculo: 6880.0
+
+IRFF:
+Valor de IRRF: 5698704.000000001
+Valor a deduzir: 5698704.000000001
+Valor Salário líquido: 5698704.000000001
+
+FÉRIAS:Elegível a férias!
+Valor total de férias :
+Valor de INSS de férias :
+Valor da base da Cálculo de Férias :
+Valor a deduzir de Férias :
+Valor de IRRF de férias :
+Férias líquido :3786.3916666666682
+
+13º SALÁRIO
+Valor total trabalhado: 
+Valor de INSS de 13º Salário: 
+Valor da Base da Cálculo de 13º Salário: 
+Valor a deduzir de 13º Salário: 
+Valor de IRRF de 13º Salário: 
+13º Salário líquido: 
