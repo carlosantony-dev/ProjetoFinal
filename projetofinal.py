@@ -67,22 +67,37 @@ if meses < 12:
     feriasSituacao = 'Não é elegível a receber decimo terceiro salário com menos de 12 meses trabalhados via CLT'
 else:
     total = (salariobruto/12)*meses
-    #Desconto INSS
     if total <= 1751.81:
-    totalseminss = total - (0.08*total)
-    aliquotainss1 = 0.08
+        totalseminss = total - (0.08*total)
+        aliquotainss1 = 0.08
     
     if total >= 1751.82 and total <= 2919.72:
-    totalseminss = total - (0.09*total)
-    aliquotainss2 = 0.09
+        totalseminss = total - (0.09*total)
+        aliquotainss2 = 0.09
 
     if total >= 2919.73 and total <= 5839.45:
-    totalseminss = total - (0.11*total)
-    aliquotainss2 = 0.11  5.839,45
+        totalseminss = total - (0.11*total)
+        aliquotainss2 = 0.11
 
     if total >= 5839.45:
-    total = total - 642.34
-    aliquotainss4 = 642.34
+        totalseminss = total - 642.34
+        aliquotainss4 = 642.34
+    
+    if totalseminss >= 1903.99 and totalseminss <= 2826.6:
+        totalseminsssemirff = totalseminss - (0.057*totalseminss)
+        aliquotairrf1 = 0.075
+
+    if totalseminss >= 2826.66 and totalseminss <= 3751.05:
+        totalseminsssemirff = totalseminss - (0.15*totalseminss)
+        aliquotairrf2 = 0.15
+
+    if totalseminss >= 3751.06 and totalseminss <= 4664.68:
+        totalseminsssemirff = totalseminss - (0.225*totalseminss)
+        aliquotairrf3 = 0.225
+
+    if totalseminss >= 4664.69:
+        totalseminsssemirff = totalseminss - (0.275*totalseminss)
+        aliquotairrf4 = 0.275
     
     
 
