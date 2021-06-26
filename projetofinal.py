@@ -61,6 +61,30 @@ else:
     ferias = provento - desconto
     
     
+ #CalculoDecimoTerceiro
+
+if meses < 12:
+    feriasSituacao = 'Não é elegível a receber decimo terceiro salário com menos de 12 meses trabalhados via CLT'
+else:
+    total = (salariobruto/12)*meses
+    #Desconto INSS
+    if total <= 1751.81:
+    totalseminss = total - (0.08*total)
+    aliquotainss1 = 0.08
+    
+    if total >= 1751.82 and total <= 2919.72:
+    totalseminss = total - (0.09*total)
+    aliquotainss2 = 0.09
+
+    if total >= 2919.73 and total <= 5839.45:
+    totalseminss = total - (0.11*total)
+    aliquotainss2 = 0.11  5.839,45
+
+    if total >= 5839.45:
+    total = total - 642.34
+    aliquotainss4 = 642.34
+    
+    
 
     
 
