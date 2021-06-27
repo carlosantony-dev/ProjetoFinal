@@ -1,3 +1,9 @@
+# Cicero Matheus Cabral  RA: 20630406
+# Carlos Antony Blecha Pires RA: 20630414
+# Bruno Amorim da Silva RA: 20630380
+
+
+
 #coding utf-8
 
 nome = str(input("Digite o nome do funcionário: "))
