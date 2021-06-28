@@ -1,10 +1,9 @@
-# Cicero Matheus Cabral  RA: 20630406
+#coding utf-8
+
+# Cicero Matheus Cabral RA: 20630406
 # Carlos Antony Blecha Pires RA: 20630414
 # Bruno Amorim da Silva RA: 20630380
 
-
-
-#coding utf-8
 
 import sys
 
@@ -93,6 +92,7 @@ def main():
             deduzirdecimo = 0
             decimo = 0
         else:
+            decimoSituacao = "Elegível ao décimo terceiro! "
             total = (salariobruto/12)*meses
             if total <= 1751.81:
                 inssdecimo = 0.08*total
@@ -118,31 +118,31 @@ def main():
                 totalseminsssemirff = totalseminss
                 aliquotairrf = 0
                 decimo = round(totalseminsssemirff,2)
-                deduzirdecimo = salariobruto - totalseminsssemirff
+                deduzirdecimo = round(salariobruto - totalseminsssemirff,2)
             
             if totalseminss >= 1903.99 and totalseminss <= 2826.6:
                 totalseminsssemirff = totalseminss - (0.057*totalseminss)
                 aliquotairrf = 0.075
                 decimo = round(totalseminsssemirff,2)
-                deduzirdecimo = salariobruto - totalseminsssemirff
+                deduzirdecimo = round(salariobruto - totalseminsssemirff,2)
 
             if totalseminss >= 2826.66 and totalseminss <= 3751.05:
                 totalseminsssemirff = totalseminss - (0.15*totalseminss)
                 aliquotairrf = 0.15
                 decimo = round(totalseminsssemirff,2)
-                deduzirdecimo = salariobruto - totalseminsssemirff
+                deduzirdecimo = round(salariobruto - totalseminsssemirff,2)
 
             if totalseminss >= 3751.06 and totalseminss <= 4664.68:
                 totalseminsssemirff = totalseminss - (0.225*totalseminss)
                 aliquotairrf = 0.225
                 decimo = round(totalseminsssemirff,2)
-                deduzirdecimo = salariobruto - totalseminsssemirff
+                deduzirdecimo = round(salariobruto - totalseminsssemirff,2)
 
             if totalseminss >= 4664.69:
                 totalseminsssemirff = totalseminss - (0.275*totalseminss)
                 aliquotairrf = 0.275
                 decimo = round(totalseminsssemirff,2)
-                deduzirdecimo = salariobruto - totalseminsssemirff
+                deduzirdecimo = round(salariobruto - totalseminsssemirff,2)
             
             
 
@@ -204,6 +204,3 @@ def main():
             sys.exit
 
 main()
-        
-
-    
